@@ -1,0 +1,117 @@
+body{
+	margin: 0;
+}
+.page-header{
+	background: url(files/header-back.jpg) 100% 100%;
+	color: white;
+}
+
+.header-top{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: stretch;
+	padding: 20px;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-top: solid 1px rgba(255, 255, 255, .3);
+	border-bottom: solid 1px rgba(255, 255, 255, .3);
+	list-style-type: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+	font-family: Helvetica;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+a{
+	color: white;
+	text-decoration: none;
+}
+
+.buttons a{
+	color: black;
+}
+
+.new{
+	margin-left: 150px;
+}
+
+.new-items{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	border: solid;
+	margin: 0;
+	margin-left: 150px;
+	margin-right: 150px;
+}
+
+.item{
+	border: solid;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "name name name name"
+						"item-image item-image spec spec"
+						"description description description description"
+						"buttons buttons buttons buttons";
+
+}
+
+.name{
+	border: solid;
+	grid-area: name;
+	padding-left: 40px;
+}
+
+.item-image{
+	border: solid;
+	grid-area: item-image;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.spec{
+	border: solid;
+	grid-area: spec;
+	display: flex;
+	justify-content: space-around;
+}
+
+.description{
+	border: solid;
+	grid-area: description;
+}
+
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	border: solid;
+	grid-area: buttons;
+}
+
+table{
+	border: solid;
+	border-collapse: collapse;
+}
+
+td{
+	border: solid;
+	padding: 10px;
+}
+
+caption{
+	caption-side: bottom;
+	text-align: left;
+}
