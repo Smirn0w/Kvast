@@ -395,3 +395,41 @@ input[type="checkbox"]{
 	margin: 0;
 	font-size: 24.22px;
 }
+
+.page-footer{
+	background: black;
+	color: white;
+	margin: 0;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding: 100px;
+}
+
+.footer-top{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.footer-top .navigation{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-bottom{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	font-size: 8px;
+}
+
+.social-links{
+	list-style-type: none;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
